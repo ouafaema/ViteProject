@@ -1,6 +1,17 @@
-export const getCharacterFromApi = async (filter = '') => {
-  const req = await fetch(`https://rickandmortyapi.com/api/character/${filter}`)
-  const res = await req.json()
+class Api {
+  constructor(url) {
+    this.apiUrl = url
+  }
 
-  return res.results
+  async getApi(filter = '') {
+    const req = await fetch(`${this.apiUrl}${filter}`)
+    const res = await req.json()
+
+    if (filter && !filter.includes('?')) {
+      return res
+    }
+    return res.results
+  }
 }
+
+export default Api

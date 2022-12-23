@@ -12,18 +12,17 @@ const tabManager = new TabManager(rootElement, {
   }
 })
 
+
 document.querySelectorAll('[data-tabId]').forEach(element => {
 
   element.addEventListener('click', () => {
     tabManager.openTabById(element.getAttribute('data-tabId'))
   })
+
   searchElement.addEventListener('input', () => {
-    console.log(searchElement.value)
+     console.log(searchElement.value)
     tabManager.openTabById(element.getAttribute('data-tabId'), searchElement.value)
   })
 })
 
-tabManager.openTabById('page1').then(function() {
-
-})
-
+tabManager.openTabById('page1')

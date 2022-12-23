@@ -1,11 +1,16 @@
 import ListCharacter from "../components/ListCharacter"
-import { getCharacterFromApi } from "../utils/Api"
+import SingleCharacterModal from "../components/SingleCharacterModal"
+import Api from "../utils/Api"
 
 const ListOfCharacter = async (searchCharacter, Param) => {
+  
   if (searchCharacter) {
     searchCharacter = `?name=${searchCharacter}`
   }
-  const res = await getCharacterFromApi(searchCharacter)
+
+  const rmApi = new Api(`https://rickandmortyapi.com/api/character/`)
+
+  const res = await rmApi.getApi(searchCharacter)
 
   if (res) {
     const data = res.map((element) => ({
@@ -14,26 +19,23 @@ const ListOfCharacter = async (searchCharacter, Param) => {
       characterId: `character${element.id}`
     }))
 
-
-
-    console.log(data[0].characterId)
-
     const element = ListCharacter(data)
 
-    const characterCard = element.querySelector('div')
-
-    characterCard.addEventListener('click', function(e) {
-      
-      if (e.target.classList.contains('characterCard')) {
-        console.log(e.target)
-      }
-
+   
+    const allCharacterCard = element.querySelectorAll('.characterLinks')
+    allCharacterCard.forEach((characterCard) => {
+      characterCard.addEventListener('click', async function(e) {
+        const app = document.querySelector('#app')
+        app.innerHTML = ''
+        const singleRes = await rmApi.getApi(e.target.id.slice(9))
+        app.appendChild(SingleCharacterModal(singleRes))
+      })
     })
 
     return element
 
   } else {
-    return window.alert("Votre personnage n'existe pas !");
+    return Error;
   }
 }
 
