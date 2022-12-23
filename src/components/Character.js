@@ -1,6 +1,6 @@
 import createElement from "../utils/createElement";
 
-const Character = ({ textName = 'Denis', src,  characterId = '', characterDetails = '#', tagName = 'div' } = {}) => createElement(
+const Character = ({ textName = 'Bonjour', src,  characterId = '', characterDetails = '#', tagName = 'div' } = {}) => createElement(
   {
     tagName,
     classList: ['characterCard'],

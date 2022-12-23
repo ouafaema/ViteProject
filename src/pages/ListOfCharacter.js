@@ -14,8 +14,7 @@ const ListOfCharacter = async (searchCharacter, Param) => {
       characterId: `character${element.id}`
     }))
 
-    // const divCharacter = document.querySelector('.characterCard')
-    // console.log(divCharacter)
+
 
     console.log(data[0].characterId)
 
@@ -34,7 +33,7 @@ const ListOfCharacter = async (searchCharacter, Param) => {
     return element
 
   } else {
-    return Error;
+    return window.alert("Votre personnage n'existe pas !");
   }
 }
 
