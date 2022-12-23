@@ -1,4 +1,4 @@
-## *ViteProject*
+# *ViteProject*
 
 
 ## Installation du projet 
@@ -34,7 +34,7 @@
     - Une barre de recherche qui permet de `récupérer les personnages` qui contiennent la valeur saisie dans la barre de recherche 
     - Le titre du personnage est un lien cliquable, il permet à l’utilisateur de `voir le détail de ce personnage`, par exemple le type, les épisodes dont il a participé… 
 
-## Lien vercel : 
+## Lien vercel 
 [https://vite-project-lcc0r6v5i-ouafaema.vercel.app/](https://vite-project-lcc0r6v5i-ouafaema.vercel.app/ )
 
 ## Installation du projet 
