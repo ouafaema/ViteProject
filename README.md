@@ -32,7 +32,7 @@
   - *Dans nos onglets, on pourra retrouver :*
     - Un page qui récupère des éléments (`nom des personnages`)
     - Une barre de recherche qui permet de `récupérer les personnages` qui contiennent la valeur saisie dans la barre de recherche 
-    - Le titre du personnage est un lien cliquable, il permet à l’utilisateur de `voir le détail de ce personnage`, par exemple le type, les épisodes dont il a participé… 
+    - Le titre du personnage est un lien cliquable, il permet à l’utilisateur de `voir le détail de ce personnage`, par exemple le type, pays...
 
 ## Lien vercel 
 [https://vite-project-sooty.vercel.app/](https://vite-project-sooty.vercel.app/)
