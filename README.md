@@ -35,7 +35,7 @@
     - Le titre du personnage est un lien cliquable, il permet à l’utilisateur de `voir le détail de ce personnage`, par exemple le type, les épisodes dont il a participé… 
 
 ## Lien vercel 
-[https://vite-project-lcc0r6v5i-ouafaema.vercel.app/](https://vite-project-lcc0r6v5i-ouafaema.vercel.app/ )
+[https://vite-project-sooty.vercel.app/](https://vite-project-sooty.vercel.app/)
 
 ## Installation du projet 
     - HAOUILI Yani
