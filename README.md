@@ -37,4 +37,7 @@
 ## Lien vercel : 
 [https://vite-project-lcc0r6v5i-ouafaema.vercel.app/](https://vite-project-lcc0r6v5i-ouafaema.vercel.app/ )
 
-
+## Installation du projet 
+    - HAOUILI Yani
+    - MARHROUF Ouafae
+    - Ouahabbi Mohammed
